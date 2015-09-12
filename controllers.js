@@ -11,14 +11,14 @@ geoApp.controller('homeController', ['$scope', '$location', 'addressService', fu
     
     $scope.submit = function() {
     
-        $location.path("/forecast");
+        $location.path("/result");
     
     };
     
 }]);
 
 
-geoApp.controller('forecastController', ['$scope', '$resource', '$routeParams', 'addressService', function($scope, $resource, $routeParams, addressService) {
+geoApp.controller('resultController', ['$scope', '$resource', '$routeParams', 'addressService', function($scope, $resource, $routeParams, addressService) {
 
     $scope.address = addressService.address;
     

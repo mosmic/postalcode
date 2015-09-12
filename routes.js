@@ -9,15 +9,10 @@ geoApp.config(function($routeProvider){
         controller: 'homeController'
     })
 
-    .when ('/forecast', {
+    .when ('/result', {
     
-        templateUrl: 'pages/forecast.htm',
-        controller: 'forecastController'
+        templateUrl: 'pages/result.htm',
+        controller: 'resultController'
     })
     
-    .when ('/forecast/:days', {
-    
-        templateUrl: 'pages/forecast.htm',
-        controller: 'forecastController'
-    })
 });
