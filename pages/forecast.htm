@@ -1,0 +1,14 @@
+<a href="/index.htm">Back to search</a>
+
+<h2>Postal code for address: {{ address }}</h2>
+<hr />
+
+<div ng-repeat="p in geoResult.results">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h3>{{ p.address_components[2].long_name }}, {{ p.address_components[6].short_name }} , {{ p.address_components[7].short_name }}</h3>
+        </div>
+    </div>
+
+</div>
